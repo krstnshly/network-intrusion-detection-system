@@ -17,9 +17,7 @@ nids/
 ├── frontend/
 │   ├── index.html            ← Standalone HTML dashboard (just open in browser)
 │   └── dashboard.py          ← Streamlit dashboard (optional)
-├── scripts/
-│   └── demo_portscan.sh      ← nmap demo script for live presentation
-├── run.py                    ← ⭐ ONE-CLICK LAUNCHER — run this!
+├── run.py                    
 ├── requirements.txt
 └── README.md
 ```
