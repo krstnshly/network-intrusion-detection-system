@@ -83,9 +83,6 @@ def train_models():
     
     y_test_binary = (y_test > 0).astype(int)
     y_pred_binary = (y_pred > 0).astype(int)
-    cm = confusion_matrix(y_test_binary, y_pred_binary)
-    print("Confusion Matrix:")
-    print(cm)
     tn, fp, fn, tp = confusion_matrix(y_test_binary, y_pred_binary).ravel()
     fpr = fp / (fp + tn) if (fp + tn) > 0 else 0
     
