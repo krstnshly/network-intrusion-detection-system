@@ -79,6 +79,9 @@ def train_models():
     
     print("4. Evaluating Detection Accuracy...")
     y_pred = rf_clf.predict(X_test)
+    cm = confusion_matrix(y_test_binary, y_pred_binary)
+    print("Confusion Matrix:")
+    print(cm)
     f1 = f1_score(y_test, y_pred, average='weighted')
     
     y_test_binary = (y_test > 0).astype(int)
